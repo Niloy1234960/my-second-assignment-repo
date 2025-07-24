@@ -1,4 +1,12 @@
-
+/* added badge style start */
+.badge{
+  position: absolute;
+  width: 285px;
+  height: 285px;
+  margin-left: 347px;
+  margin-top: -130px;
+}
+/* added badge style close */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
@@ -51,7 +59,13 @@
 }
 
 @media screen and  (max-width:576px){
-  .home, .li-container{
+  /* hide badge start */
+  .badge{
+    display: none;
+    
+  }
+  /* hide badge close */
+  .home, .li-container {
     display: none;
   }
   .navber img{
@@ -374,4 +388,133 @@
     }
 
 }
+
+
+/* Subscribe Section */
+.subscribe-section {
+  background: url("../assets/news-letter-bg.png" ) no-repeat center center/cover;
+  
+  height: 400px;
+  
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+
+.subscribe-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+  padding-top: 40px ;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  border: none;
+  background: #E95A08;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Footer */
+.footer {
+    max-width: 1140px;
+    margin: 0 auto;
+    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+.color{
+    color: #8987A1;
+}
+
+.footer-left,
+.footer-links {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.footer-left h3 {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-links div p {
+  margin: 5px 0;
+}
+
+.social-icons  img{
+  gap: 12px;
+  font-size: 24px;
+  margin-top: 0 auto;
+  margin-left: 20px;
+}
+
+/* ------------------ */
+/* Responsive Mobile */
+/* ------------------ */
+@media (max-width: 576px) {
+ 
+  .promo-container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .left-column,
+  .right-column {
+    flex: none;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-form input {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .footer-links {
+    flex-direction: column;
+    
+  }
+
+  .footer-links div {
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+}
+
 

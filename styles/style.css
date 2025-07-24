@@ -219,3 +219,66 @@
 }
 
 
+.flower-container{
+  display: flex;
+  max-width: 1140px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 350px;
+  
+}
+
+.font-container {
+ 
+  margin-left: 60px;
+}
+
+.noto-serif-font{
+  font-size: 3rem;
+  color: #000000;
+}
+
+.Indulge-font{
+  color: #8987A1;
+}
+
+.Indulge-font li{
+   height: 130px;
+   width: 500px;
+}
+
+
+@media (max-width: 576px) {
+  .flower-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0 15px;
+  }
+
+  .flower-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .font-container {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .noto-serif-font {
+    font-size: 2rem;
+  }
+
+  .Indulge-font li {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+
